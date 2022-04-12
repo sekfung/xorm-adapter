@@ -36,6 +36,7 @@ func (the *CasbinRule) TableName() string {
 
 // CasbinRule  .
 type CasbinRule struct {
+	Id    string `xorm:"varchar(100) notnull pk"`
 	PType string `xorm:"varchar(100) index not null default ''"`
 	V0    string `xorm:"varchar(100) index not null default ''"`
 	V1    string `xorm:"varchar(100) index not null default ''"`
