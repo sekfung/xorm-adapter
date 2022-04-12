@@ -36,6 +36,7 @@ func (the *CasbinRule) TableName() string {
 
 // CasbinRule  .
 type CasbinRule struct {
+	Id    uint   `xorm:"UNSIGNED INT notnull pk autoincr UNSIGNED INT"`
 	PType string `xorm:"varchar(100) index not null default ''"`
 	V0    string `xorm:"varchar(100) index not null default ''"`
 	V1    string `xorm:"varchar(100) index not null default ''"`
